@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.657190635451505" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="619.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Admin_Page_Controller">
+   <items>
+      <SplitPane dividerPositions="0.5" prefHeight="367.0" prefWidth="798.0" SplitPane.resizableWithParent="false">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="390.0" styleClass="theme">
+               <children>
+                  <Label layoutX="134.0" layoutY="14.0" text="Inserimento Gestore" />
+                  <TextField fx:id="nomeIns" layoutX="176.0" layoutY="57.0" />
+                  <Label layoutX="50.0" layoutY="62.0" text="Nome" />
+                  <Label layoutX="39.0" layoutY="107.0" text="Cognome" />
+                  <Label layoutX="41.0" layoutY="152.0" text="Cellulare" />
+                  <Label layoutX="54.0" layoutY="196.0" text="Tipo" />
+                  <Label layoutX="37.0" layoutY="246.0" text="Username" />
+                  <Label layoutX="39.0" layoutY="296.0" text="Password" />
+                  <TextField fx:id="cognomeIns" layoutX="176.0" layoutY="102.0" />
+                  <TextField fx:id="celIns" layoutX="176.0" layoutY="147.0" />
+                  <TextField fx:id="usernameIns" layoutX="176.0" layoutY="241.0" />
+                  <TextField fx:id="passIns" layoutX="176.0" layoutY="291.0" />
+                  <Button fx:id="saveIns" layoutX="172.0" layoutY="348.0" mnemonicParsing="false" onAction="#salvaIns_IsFired" text="Salva" />
+                  <ComboBox fx:id="tipoIns" layoutX="177.0" layoutY="193.0" prefHeight="27.0" prefWidth="167.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="399.0" styleClass="theme">
+               <children>
+                  <Label layoutX="138.0" layoutY="14.0" text="Modifica Gestore" />
+                  <Label layoutX="55.0" layoutY="115.0" text="Username" />
+                  <TextField fx:id="usernameMod" layoutX="175.0" layoutY="112.0" />
+                  <Button fx:id="recuperaMod" layoutX="26.0" layoutY="250.0" mnemonicParsing="false" onAction="#salvaAggPass_Fired" text="Recupera Password" />
+                  <Button fx:id="AggiornaMod" layoutX="214.0" layoutY="250.0" mnemonicParsing="false" onAction="#salvaModPass_Fired" prefHeight="27.0" prefWidth="142.0" text="Aggiorna Password" />
+                  <TextField fx:id="passMod" layoutX="175.0" layoutY="187.0" />
+                  <Label layoutX="41.0" layoutY="190.0" text="New Password" />
+                  <Label fx:id="risPass" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="310.0" prefHeight="27.0" prefWidth="167.0" textAlignment="CENTER" textFill="#52c646" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane prefHeight="199.0" prefWidth="798.0" styleClass="theme" SplitPane.resizableWithParent="false">
+         <children>
+            <Label layoutX="358.0" layoutY="20.0" text="Assegna Area" />
+            <Label layoutX="116.0" layoutY="71.0" text="Tipo" />
+            <Label layoutX="365.0" layoutY="71.0" text="Nome Area" />
+            <Label layoutX="608.0" layoutY="71.0" text="Username Gestore" />
+            <TextField fx:id="nomeArea" layoutX="316.0" layoutY="101.0" />
+            <TextField fx:id="usernameArea" layoutX="582.0" layoutY="101.0" />
+            <Button fx:id="saveArea" layoutX="374.0" layoutY="140.0" mnemonicParsing="false" onAction="#salvaArea_Fired" text="Salva" />
+            <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutY="186.0" prefHeight="27.0" prefWidth="800.0" style="-fx-background-color: #575757;" textAlignment="CENTER" textFill="WHITE" />
+            <ComboBox fx:id="tipoArea" layoutX="47.0" layoutY="101.0" prefHeight="27.0" prefWidth="167.0" />
+         </children>
+      </AnchorPane>
+   </items>
+   <stylesheets>
+      <URL value="@../../../../IdeaProjects/Project/src/layouts/css/sample.css" />
+      <URL value="@css/sample.css" />
+   </stylesheets>
+</SplitPane>

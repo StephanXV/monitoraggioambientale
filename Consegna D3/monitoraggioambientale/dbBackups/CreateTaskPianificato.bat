@@ -1,0 +1,1 @@
+schtasks /create /tn "My Task" /tr "C:\Users\enric\Desktop\dbBackups\scriptBackup.bat" /sc MINUTE /mo 5
