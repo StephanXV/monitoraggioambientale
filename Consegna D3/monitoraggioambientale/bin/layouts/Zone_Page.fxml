@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="800.0" prefWidth="1000.0" styleClass="theme" stylesheets="@css/sample.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Zone_Page_Controller">
+    <children>
+        <HBox VBox.vgrow="NEVER">
+            <children>
+                <Label fx:id="titolo" prefHeight="26.0" prefWidth="402.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER_RIGHT" spacing="15.0" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets bottom="15.0" left="10.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+      <SplitPane dividerPositions="0.641" prefHeight="160.0" prefWidth="200.0">
+        <items>
+                  <TableView fx:id="table" prefHeight="539.0" prefWidth="430.0">
+                      <columns>
+                          <TableColumn fx:id="colNome" prefWidth="85.0" text="Nome" />
+                          <TableColumn fx:id="colTemperatura" prefWidth="152.0" text="Temperatura media" />
+                          <TableColumn fx:id="colUmidita" prefWidth="128.0" text="Umidità media" />
+                          <TableColumn fx:id="colPressione" prefWidth="118.0" text="Pressione media" />
+                          <TableColumn fx:id="colLuminosita" prefWidth="173.0" text="Luminosità media" />
+                      </columns>
+                  </TableView>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="edificioCliccato" layoutX="32.0" layoutY="51.0" prefHeight="42.0" prefWidth="292.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+          <ListView fx:id="building_list" prefHeight="611.0" prefWidth="1000.0" styleClass="darkList" />
+    </children>
+</VBox>

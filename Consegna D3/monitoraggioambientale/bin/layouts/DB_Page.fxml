@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" stylesheets="@css/sample.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DB_Page_Controller">
+   <children>
+      <Label layoutX="67.0" layoutY="121.0" text="Porta" />
+      <Label layoutX="50.0" layoutY="198.0" text="Username" />
+      <Label layoutX="53.0" layoutY="268.0" text="Password" />
+      <TextField fx:id="port" layoutX="133.0" layoutY="118.0" text="3306" />
+      <TextField fx:id="user" layoutX="133.0" layoutY="195.0" text="root" />
+      <TextField fx:id="pass" layoutX="133.0" layoutY="265.0" promptText="password" />
+      <Label layoutX="120.0" layoutY="50.0" text="Connessione Database" />
+      <Button fx:id="avanti" layoutX="167.0" layoutY="327.0" mnemonicParsing="false" onAction="#avantiIsFired" text="Avanti" />
+   </children>
+</AnchorPane>
